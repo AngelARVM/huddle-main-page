@@ -1,1 +1,119 @@
+:root{
+    //COLORS
+    //Primary
+    --Pink: hsl(322, 100%, 66%);
+
+    //Neutrals
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+
+    //FONTS
+    --Font-size: 18px;
+}
+
+body{
+    width: 100%;
+    //FONTS
+    font-size: --Font-size;
+    font-family: 'Open sans', 'Poppins', sans-serif;
+}
+
+
+//HEADER -------------------------------------------------
+
+.header{
+    width: 100%;
+    //max-width: 375px;
+    background: var(--Very-Pale-Cyan);
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    padding-left: 16px!important;
+    padding-top: 22px!important;
+    padding-right: 16px!important;
+}
+
+.head{
+    display:flex;
+    justify-content: space-between;
+}
+
+.head__logo{
+    height: 17px;
+    margin-top: 4px;
+}
+
+.button-white{
+    width: 100px;
+    height: 24px;
+    background:white;
+    border-radius: 2rem;
+    box-shadow: 0px 1px 2px 1px hsla(0, 0%, 0%, 0.100);
+    display: flex;
+    justify-content :center;
+    align-items: center;
+
+    a{
+        text-decoration:none;
+        color:var(--Very-Dark-Cyan);
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: .68rem;
+    }
+}
+
+.ctaction{
+    width: 100%;
+    //max-width: 350px;
+    margin-top: 5.2rem!important;
+}
+
+.ctaction__title{
+    padding: 0 24px;
+    color: var(--Very-Dark-Cyan);
+    font-family: 'poppins';
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.ctaction__text{
+    font-family: 'Open sans';
+    padding: 1rem 1.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align:center;
+}
+
+.button-pink{
+    width: 240px;
+    height: 40px;
+    margin:auto;
+    background:var(--Pink);
+    border-radius: 2rem;
+    box-shadow: 0px 1px 2px 1px hsla(0, 0%, 0%, 0.100);
+    display: flex;
+    justify-content :center;
+    align-items: center;
+
+    a{
+        text-decoration:none;
+        color:white;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: .68rem;
+        letter-spacing: 0.08em;
+    }
+}
+
+.ilustration img{
+    //temporal
+    width: 100%;
+    //max-width: 300px;
+    margin: 3.2rem 0 2rem 0;
+    padding: 0 1.3rem;
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
