@@ -14,6 +14,7 @@
 
 body{
     width: 100%;
+    
     //FONTS
     font-size: --Font-size;
     font-family: 'Open sans', 'Poppins', sans-serif;
@@ -24,7 +25,6 @@ body{
 
 .header{
     width: 100%;
-    //max-width: 375px;
     background: var(--Very-Pale-Cyan);
     background-image: url('../images/bg-hero-mobile.svg');
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body{
     height: 24px;
     background:white;
     border-radius: 2rem;
-    box-shadow: 0px 1px 2px 1px hsla(0, 0%, 0%, 0.100);
+    box-shadow: 1px 1px 5px 2px hsla(0, 0%, 0%, 0.100);
     display: flex;
     justify-content :center;
     align-items: center;
@@ -62,9 +62,15 @@ body{
     }
 }
 
+.button-white:hover{
+    cursor:pointer;
+    a{
+        color:var(--Very-Dark-Cyan);
+    }
+}
+
 .ctaction{
     width: 100%;
-    //max-width: 350px;
     margin-top: 5.2rem!important;
 }
 
@@ -73,6 +79,7 @@ body{
     color: var(--Very-Dark-Cyan);
     font-family: 'poppins';
     font-size: 1.5rem;
+    font-weight: bold;
     text-transform: capitalize;
     text-align: center;
     line-height: 2.2rem;
@@ -92,7 +99,7 @@ body{
     margin:auto;
     background:var(--Pink);
     border-radius: 2rem;
-    box-shadow: 0px 1px 2px 1px hsla(0, 0%, 0%, 0.100);
+    box-shadow: 0px 2px 10px 3px hsla(0, 0%, 0%, 0.100);
     display: flex;
     justify-content :center;
     align-items: center;
@@ -107,10 +114,16 @@ body{
     }
 }
 
+.button-pink:hover{
+    cursor:pointer;
+    background:rgb(240, 102, 189);
+    a{
+        color:white;
+    }
+}
+
 .ilustration img{
-    //temporal
     width: 100%;
-    //max-width: 300px;
     margin: 3.2rem 0 2rem 0;
     padding: 0 1.3rem;
 }
@@ -126,12 +139,9 @@ body{
     width: 100%;
     max-width: 100vw;
     margin-bottom: 2.2rem;
-    border: 0.5px solid rgba(0, 0, 0, 0.09);
     border-radius: .5rem;
-    //MEJORAR!!!
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
-
 
 .cards__img{
     width: 100%;
@@ -166,8 +176,7 @@ body{
     color: var(--Very-Dark-Cyan);
     border: 0.5px solid rgba(0, 0, 0, 0.09);
     border-radius: 1rem;
-    //mejorar!!!
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.09);
 }
 
 .rounded-cards__title{
@@ -185,11 +194,11 @@ body{
     margin:auto;
     background:var(--Pink);
     border-radius: 2rem;
-    box-shadow: 0px 1px 2px 1px hsla(0, 0%, 0%, 0.100);
+    box-shadow: 0px 2px 10px 3px hsla(0, 0%, 0%, 0.100);
     display: flex;
     justify-content :center;
     align-items: center;
-
+    
     a{
         text-decoration:none;
         color:white;
@@ -200,6 +209,14 @@ body{
     }
 }
 
+.button-pink-l:hover{
+    
+    background: hsla(322, 100%, 66%, 0.493)!important;
+    a{
+        color:white;
+    }
+}
+
 //FOOTER-----------------------------------------
 
 .footer{
@@ -207,16 +224,11 @@ body{
     background: var(--Very-Dark-Cyan);
     color:var(--Very-Pale-Cyan);
     font-family: 'Open sans';
-    
-    /* *{
-        border: 1px solid red;
-    } */
 }
 
 .footer__img{
     margin:1.6rem 0!important;
     width: 11.5rem!important;
-
 }
 
 .footer__contacts{
@@ -242,11 +254,6 @@ body{
     padding-right: 1.2rem;
     font-size: 0.96rem;
     line-height: 1.6rem!important;
-}
-
-.footer__links{
-/*     display:flex;
-    flex-direction: column; */
 }
 
 .footer__links-ul{
@@ -275,7 +282,6 @@ body{
     margin-top: 1.7rem!important;
     display:flex;
     justify-content: center;
-
 }
 
 .footer__social-ico{
@@ -303,5 +309,247 @@ body{
     text-align:center;
     font-size: 0.65rem;
 }
+
+
+@media (min-width: 992px){
+
+    //MAIN-------------------------------------
+    .cards{
+        max-width: 86vw;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+    
+    .aux__text-2, .aux__text-3{
+        padding: 10rem 0 0 0rem!important;
+    }
+
+
+    //FOOTER-----------------------------------
+
+    .footer__social{
+        margin: 0 0 0 6rem;
+        margin-top: 0!important;
+        display:inline;
+    }
+    
+    .aux__social{
+        padding: 0.2rem 0.5rem!important;
+    }
+}
+
+
+@media screen and (min-width: 1308px){
+
+    //HEADER------------------------------------------
+    .header{
+        width: 100%;
+        padding: 3rem 5rem 0!important;
+        background-image: url('../images/bg-hero-desktop.svg');
+    }
+
+    .head{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .head__logo{
+        height: 32px;
+    }
+
+    .button-white{
+        width: 200px;
+        height: 50px;
+    
+        a{
+        font-size: 1rem;
+        }
+    }
+
+    .ctaction{
+        margin: 8rem 0 6.5rem!important;
+    }
+    
+    .ctaction__title{
+        padding: 2rem 0 0 0;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: start;
+        line-height: 3.8rem;
+        letter-spacing: -0.01rem;
+    }
+    
+    .ctaction__text{
+        margin-top: 1.9rem;
+        padding:0!important;
+        font-size: 1.13rem;
+        font-weight: 400;
+        text-align:start;
+    }
+    
+    .button-pink{
+        width: 280px;
+        height: 55px;
+        margin: 2.1rem 0;
+    
+        a{
+            letter-spacing: 0.06em;
+        }
+    }
+    
+    .ilustration img{
+        width: 100%;
+        margin: 3.8rem 0 2rem 1rem!important;
+        padding: 0 1.3rem;
+    }
+
+
+    //MAIN--------------------------------------------
+    .main{
+        width: 100%;
+        padding: 11rem 1.1rem 19rem!important;
+    }
+
+    //inverted
+    .aux__inverted{
+        flex-direction: row-reverse;
+    }
+
+    .cards{
+        max-width: 86vw;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+    
+    
+    .aux__text-3{
+        padding: 10rem 0 0 8.4rem!important;
+    }
+
+    .aux__text-2{
+        padding: 9.3rem 3rem 0 5.5rem!important; 
+    }
+
+    .cards__img{
+        max-width: 68%;
+        margin: 4.2rem 1.5rem 3.7rem 10rem!important;
+    }
+    
+    .aux__img{
+        margin: 4.2rem 1.5rem 3.7rem 8rem!important;
+    }
+
+    .cards__title{
+        text-align:start;
+        font-size: 1.8rem;
+    }
+    
+    .cards__text{
+        padding: 0.6rem 0rem;
+        text-align: start;
+        font-size: 1.1rem;
+    }
+    
+    
+    //CTA-CARD---------------------------------------
+    .rounded-cards{
+        width: 100%;
+        max-width: 56vw;
+        margin: -11rem auto;
+        padding: 4.2rem 0 3.5rem;
+    }
+    
+    .rounded-cards__title{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    
+    .button-pink-l{
+        width: 400px;
+        height: 80px;
+        border-radius: 4rem;
+        box-shadow: 0px 5px 10px 0px hsla(0, 0%, 0%, 0.300);
+    
+        a{
+            font-size: 1.15rem;
+            letter-spacing: 0;
+        }
+    }
+
+    //FOOTER------------------------------------------
+    .footer{
+        width: 100%!important;
+        max-width: 100%!important;
+        padding: 0 7.5rem!important;
+    }
+
+    .aux__hr{
+        height: 0!important;
+        border: none!important;
+    }
+
+    .footer__img{
+        margin:17rem 0 1.6rem!important;
+        width: 100%!important;
+        max-width: 260px!important;
+    }
+
+    
+    .footer__contacts{
+        margin-bottom: 0!important;
+    }
+    
+    .footer__contact{
+        display:inline-flex;
+        margin-bottom: 0.3rem;
+    }
+    
+    .footer__ico{
+        max-height: 1.1rem;
+        margin-right: 1rem;
+    }
+    
+    .aux__ico{
+        margin-top: 0.4rem;
+        margin-right: 1.55rem;
+    }
+    
+    .footer__text{
+        padding-right: 1.2rem;
+        font-size: 0.96rem;
+        line-height: 1.6rem!important;
+    }
+
+    .footer__links{
+        margin: 0  0 0 2rem;
+        position:relative;
+    }
+
+    .footer__link{
+        padding: 0 0 0 3.5rem;
+    }
+
+    .footer__social{
+        margin: 0 0 0 6rem;
+        margin-top: 0!important;
+        display:inline;
+    }
+
+    .footer__social-ico{
+        margin: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        text-decoration: none;
+        color: var(--Very-Pale-Cyan);
+        border: 1px solid var(--Very-Pale-Cyan)!important;
+        border-radius: 50%;
+    }
+
+    .footer__copyright{
+        text-align: end;
+        margin-bottom: 3.5rem!important;
+        font-size: 0.75rem;
+    }
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
